@@ -1,0 +1,5 @@
+s=input().split()
+s=list(s)
+d=list(s[0])
+e=list(s[1])
+print(s[-1],d[0]+'.',e[0]+'.',end='')
