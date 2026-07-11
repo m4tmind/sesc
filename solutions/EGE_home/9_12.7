@@ -1,0 +1,11 @@
+with open('9.txt', 'r') as f:
+    lines=f.readlines()
+c=0
+for line in lines:
+    nums=list(map(int, line.split()))
+    dubl=len(nums)!=len(set(nums))
+    odd_c=sum(1 for x in nums if x%2!=0)
+    3_odd=(odd_c==3)
+    if dubl!=3_odd:
+        c+=1
+print(c)
